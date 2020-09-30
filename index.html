@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals</title>
+    <script>
+        // Saludo al usuario
+        // console.log('Hola qué tal');
+        // console.log('Hola qué tal');
+    </script>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+        // Variables
+
+        // Estructura: var nombreVariable = valor
+        // var age = 20;
+
+        // var age2;
+        // age2 = 20;
+
+        // console.log('La edad es: ', age2);
+
+        // var date = 20;
+
+
+        // // Hoisting
+        // console.log('El nombre del usuario es: ', name);
+        // var name = 'Horse Luis';
+        
+
+        // // Bloques
+
+        // {
+        //     const name2 = 'Horse Pedro';
+        //     let name = 'Horse Luis';  
+        // }
+
+        // console.log(name, name2);
+
+
+        // // Redeclarar
+        // var classroom = 'FSD';
+        // var classroom = 'Data';
+
+        // console.log(classroom);
+
+
+        // Tipos de datos
+
+        // Strings
+        const name = 'Horse Luis';
+        let description = "Loren ipsum Loren ipsumLoren ipsumLoren ipsumLoren ipsumLoren ipsumLoren ipsumLoren ipsumLoren ipsumLoren ipsumLoren ipsum";
+        console.log(description);
+        const numberLikeString = '998521'; // es un String
+        let booleanLikeString = 'false'; // es un String
+
+        // Number
+        const age = 20;
+        const iva = 0.21; // float
+        const pi = 3.1416;
+        const pi2 = '3.1416'; // es un String
+
+        console.log(pi);
+        console.log(pi2);
+
+
+        // Boolean
+        const hasSauna = true;
+        const hasCardio = false;
+        let userIsLoggedIn = false;
+        let userIsLoggedIn2 = 'false'; // es un String
+
+        console.log(userIsLoggedIn);
+
+
+        // Null & undefined
+        const accountMoney = null;
+        let undefinedExample = undefined;
+        console.log(undefinedExample);
+
+        // Objetos
+
+        const coche = {
+            color: 'Rojo',
+            marca: 'Ferrari',
+            cv: 200,
+            anio: 2005
+        };
+
+        console.log(typeof accountMoney);
+
+        
+        // Operadores
+
+        // Suma
+        console.log('El resultado es: ', 2 + 2);
+
+        // Resta
+        console.log('El resultado es: ', 2 - 2);
+
+        // Multiplicación
+        console.log('El resultado es: ', 2 * 2);
+
+        // Exponente
+        console.log('El resultado es: ', 2 ** 2);
+
+        // División
+        console.log('El resultado es: ', 2 / 2);
+
+        // Módulo
+        console.log('El resultado es: ', 10 % 3);
+
+        // Incremento
+        let number = 10;
+        console.log('Incremento es: ', number++);
+        console.log('Post', number);
+
+        // Decremento
+        let number2 = 10;
+        console.log('Decremento es: ', --number2);
+        console.log('Post', number2);
+
+        // Asignación
+        let miValor = 'Hola';
+
+        // Asignación con adición
+        let age5 = 20;
+        age5 += 5;
+        // age5 = age5 + 5;
+        console.log('Edad: ', age5);
+
+        // Asignación con sustracción
+        let age6 = 20;
+        age6 -= 5;
+        // age6 = age6 + 5;
+        console.log('Edad: ', age6);
+
+        // Asignación con exponente multiplicación división y módulo
+        let age7 = 20;
+        age7 **= 5;
+        age7 *= 5;
+        age7 /= 5;
+        age7 %= 5;
+        // age7 = age7 + 5;
+        console.log('Edad: ', age7);
+
+        // Operadores de comparación
+        // Igualdad
+        const agePepe = 15;
+        const carnetConducirPepe = false;
+        const ageMaria = '20';
+
+        console.log(agePepe === ageMaria); // SIEMPRE
+
+        // Diferencia
+        console.log(agePepe !== ageMaria);
+
+        // Mayor que Menor que
+        console.log('Mayor que', agePepe > ageMaria);
+        console.log('Menor que', agePepe < ageMaria);
+        console.log('Mayor o igual que', agePepe >= ageMaria);
+        console.log('Menor o igual que', agePepe <= ageMaria);
+
+        // Operador ternario
+        // Estructura:   condicion ? resultadoSiTrue : resultadoSiFalse;
+        agePepe > 17 ? console.log('Pepe es mayor de edad') : console.log('Pepe es menor de edad');
+
+
+        // Operadores lógicos
+        agePepe < 18 && !carnetConducirPepe ? console.log('Pepe no puede conducir') : console.log('Pepe sí puede conducir');
+        
+
+        var miVar1 = 'Hola';
+        var miVar2 = 'Qué tal te va';
+        var miVar3 = 'Bye bye';
+
+        miVar1 = miVar2 = miVar3;
+
+        console.log('RESULTADO', miVar1);
+
+
+        const saludo = 'Hola';
+        const nombreASaludar = 'Horse Luis';
+        console.log(saludo + ' ' + nombreASaludar);
+
+
+        console.log('RESULTADO: ', '11' + 1); // "111"
+        console.log('RESULTADO: ', '11' - 1); // 10
+
+
+        const year = 'false';
+        console.log(year);
+        console.log(Number(year));
+
+        const test = '0.0234';
+        console.log(Number(test));
+
+        console.log(year && true);
+
+
+        // Prompt - permite que el usuario escriba info
+        const miNombre = prompt('Escribe tu nombre');
+        console.log('Tu nombre es ', miNombre);
+
+
+    </script>
+</body>
+</html>
